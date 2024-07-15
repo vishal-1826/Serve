@@ -16,7 +16,7 @@ export class AppComponent  implements OnInit{
   constructor(private service:ApidemoService){}
   ngOnInit(): void {
       this.service.get().subscribe((r)=>{
-        console.log("result",r);
+        
         this.item=r;
       })
   }
